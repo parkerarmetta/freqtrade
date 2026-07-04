@@ -56,8 +56,8 @@
         "listen_port": 8080,
         "verbosity": "error",
         "enable_openapi": false,
-        "jwt_secret_key": "CHANGE_ME_RANDOM_STRING",
-        "ws_token": "CHANGE_ME_RANDOM_STRING",
+        "jwt_secret_key": "CHANGE_ME_replace_with_32plus_random_characters_000",
+        "ws_token": "CHANGE_ME_replace_with_random_token",
         "CORS_origins": [],
         "username": "freqtrader",
         "password": "CHANGE_ME"
