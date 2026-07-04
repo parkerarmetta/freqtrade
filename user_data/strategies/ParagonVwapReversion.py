@@ -199,3 +199,13 @@ class ParagonVwapReversion(IStrategy):
         if min_stake:
             stake = max(stake, min_stake)
         return stake
+
+
+class ParagonVwapReversionSpot(ParagonVwapReversion):
+    """Long-only spot variant — for US-legal spot venues (e.g. Kraken) that
+    cannot short. Only the LOWER-band fade fires; the short (upper-band) half of
+    S1 is dropped. Everything else (location gate, sizing, exits) is inherited.
+    Use this on a `trading_mode: spot` config; it fixes freqtrade's rule that a
+    can_short strategy cannot run on spot."""
+
+    can_short = False
