@@ -11,6 +11,9 @@ user_data/strategies/*
 !user_data/strategies/Btc5mMomentumPersistence.py
 !user_data/strategies/BTC5M_MOMENTUM.md
 !user_data/config_btc5m_momentum.example.json
+!user_data/strategies/EmaTrendPullback.py
+!user_data/QUICKSTART.md
+!user_data/config_dryrun_spot.example.json
 !user_data/notebooks
 !user_data/models
 !user_data/freqaimodels
