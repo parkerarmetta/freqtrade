@@ -17,6 +17,8 @@ user_data/strategies/*
 !user_data/strategies/ParagonVwapReversion.py
 !user_data/strategies/PARAGON.md
 !user_data/config_paragon.example.json
+!user_data/config_dryrun_kraken.example.json
+!user_data/DESKTOP_SETUP.md
 !user_data/notebooks
 !user_data/models
 !user_data/freqaimodels
