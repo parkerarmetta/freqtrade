@@ -126,3 +126,12 @@ class Btc5mMomentumPersistence(IStrategy):
         if held_sec > 180:
             return "bucket_end_failsafe"
         return None
+
+
+class Btc5mMomentumPersistenceSpot(Btc5mMomentumPersistence):
+    """Long-only spot variant — for US-legal spot venues (e.g. Kraken) that
+    cannot short. Only tests the UP half of the momentum hypothesis (does an
+    up-move in the first 3 minutes extend to the window close). Everything else
+    is inherited. Use on a `trading_mode: spot` config."""
+
+    can_short = False
